@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Khalil - Tech Lover, Leadership and Scouting</title>
+    <meta charset="utf-8" />
+    <meta lang="en" />
+    <meta name="author" content="Khalil" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/Iconslogo/rsz_logo_1-150x150.png" />
+    <!--The below code is for importing google web fonts in html-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Audiowide|Baloo+Tamma|Kelly+Slab|Neucha|Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/workslider.css" type="text/css" />
+    <script src="js/formValidate.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </head>
+  <style>
+    /*Internal CSS*/
+    #time {
+      float: right;
+      font-size: 30px;
+      margin: 10px;
+      font-family: "kelly slab";
+      margin-right: 20px;
+      font-weight: bold;
+    }
+    @media only screen and (max-width: 800px) {
+      #greet {
+        visibility: hidden;
+      }
+      #time {
+        margin: auto;
+        font-family: "kelly slab";
+      }
+    }
+    #greet {
+      font-size: 25px;
+      font-family: audiowide;
+      position: absolute;
+      left: 50%;
+      top: 2%;
+      font-weight: bold;
+    }
+
+    #center {
+      text-align: center;
+      padding: 30px;
+    }
+  </style>
+  <body>
+    <!--Header Section-->
+    <div class="header">
+      <!--Inline css in below line-->
+      <span
+        style="font-size: 40px; cursor: pointer; margin-left: 10px"
+        onclick="openNav()"
+        id="open"
+        >&#9776;
+      </span>
+      <a href="home.html"><img src="images/Iconslogo/perlogo.jpg" /></a>
+      <span class="greeting" id="greet"></span>
+      <span id="time"></span>
+    </div>
+
+    <!--Navigation Section-->
+    <div id="myNav" class="navbar">
+      <a
+        href="javascript:void(0)"
+        class="closebtn"
+        onclick="closeNav()"
+        id="close"
+        >&times;</a
+      >
+      <div class="navbar-content">
+        <a href="#home" id="active">Home</a>
+        <a href="resume.html">CV</a>
+        <a href="#blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <!--Banner Section-->
+    <div class="banner-area" id="home">
+      <div class="title-image"></div>
+      <div class="title-name">
+        <p class="name">
+          <span id="name">Khalil</span><br/>
+          <span class="subtitle1" id="subtitle1">Tech Lover</span>
+          <span class="subtitle2" id="subtitle2">Leadership and scouting</span>
+        </p>
+      </div>
+    </div>
+
+    <!--Services Section-->
+    <div class="service-area" id="services">
+      <div class="text-part">
+        <h1 id="center" >What can I do?</h1>
+        <div class="container">
+          <div class="box">
+            <div class="icon"></div>
+            <div class="content">
+              <h3>Public Speaking</h3>
+              <p>
+                Can talking with many people and can deliver speech in front of Public
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"></div>
+            <div class="content">
+              <h3>Microsoft Office</h3>
+              <p>
+                Highly skilled in Digital Administration, 
+                utilizing MS Office (Word and Excel) for 
+                accurately and efficiently documenting, archiving, 
+                and compiling organizational reports.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"></div>
+            <div class="content">
+              <h3>Responsible & organized</h3>
+              <p>
+                Responsible for fulfilling dual organizational 
+                roles (Head of OSIS Informatics Section and Saka 
+                Bhayangkara Secretary) requiring high levels of 
+                work organization and commitment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Who do I work with, Section-->
+    <div class="corpwork-area" id="corpwork">
+      <div class="text-part">
+        <!--Aligning header to center using inline css-->
+        <h1 style="text-align: center">Who do I work with?</h1>
+        <center>
+          <div class="imgrel fade">
+            <img src="images/Iconslogo/circle-cropped-1-150x150.png" />
+            <p>International Youth Society</p>
+          </div>
+
+          <div class="imgrel fade">
+            <img src="images/Iconslogo/wya.png" />
+            <p>World Youth Alliance, Nepal</p>
+          </div>
+
+          <div class="imgrel fade">
+            <img src="images/Iconslogo/circle-cropped-150x150.png" />
+            <p>AgriTech Nepal</p>
+          </div>
+
+          <div class="imgrel fade">
+            <img src="images/Iconslogo/rsz_logo_1-150x150.png" />
+            <p>ForkhakiTech</p>
+          </div>
+        </center>
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+    </div>
+
+    <!--About Section-->
+    <div class="about-area" id="about">
+      <div class="text-part-abt">
+        <h1 style="text-align: center; padding-bottom: 10px">
+          <span
+            style="
+              font-size: 80px;
+              text-decoration: none;
+              border-bottom: 2px solid rgb(230, 173, 30);
+              color: rgb(230, 173, 30);
+            "
+            >A</span
+          >bout Me
+        </h1>
+        <div class="about">
+          <div class="abt-content">
+            <div class="rem-part">
+              <div class="social-media">
+                <div class="icons">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100026809264487"
+                    target="
+                            "
+                    ><img src="images/Iconslogo/facebook.png"
+                  /></a>
+                  <a
+                    href="https://www.instagram.com/muhammad_khalil2712"
+                    target="_blank"
+                    ><img src="images/Iconslogo/instagram.png"
+                  /></a>
+                </div>
+              </div>
+              <div class="left-part">
+                <span class="h2"
+                  >I'm
+                  <span style="color: orangered">Muhammad Khalilurrahman</span></span
+                ><br />
+                <span class="h3">Leadership, Organized, Responsible</span>
+                <hr />
+                <p style="font-size: 25px">
+                  "I am a D4 Software Engineering student with a strong
+                   leadership foundation, proven by my experience as the 
+                   Head of the Informatics Section for OSIS and currently 
+                   serving as the Secretary for the Pramuka Saka Bhayangkara. 
+                   I am highly organized and proficient in using MS Office (Word & Excel), 
+                   enabling me to be fully responsible for managing administrative and team 
+                   tasks efficiently.                
+                  </p>
+              </div>
+              <div class="abt-btn">
+                <button
+                  type="button"
+                  onclick="window.location.href='resume.html';"
+                  class="button1"
+                >
+                  View My CV
+                </button>
+                <button
+                  type="button"
+                  onclick="window.location.href='#contact';"
+                  class="button2">
+                  Hire Me
+                </button>
+              </div>
+            </div>
+            <div class="img-part">
+              <div class="img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Testimonial Section-->
+    <div class="testimonial-area" id="testimonial">
+      <div class="testimonials">
+        <div class="inner">
+          <h1>Testimonial</h1>
+          <div class="border"></div>
+          <div class="row">
+            <div class="col">
+              <div class="testimonial">
+                <div class="head-testi">
+                  <img src="images/pinsaka2.jpg" alt="Checep" />
+                  <div class="name-testi">Checep Abu Bakar</div>
+                  <div class="subname-testi">
+                    Retired National Work Unit Leader
+                  </div>
+                  <div class="stars">
+                    <img src="images/Iconslogo/star_gold.png" />
+                    <img src="images/Iconslogo/star_gold.png" />
+                    <img src="images/Iconslogo/star_gold.png" />
+                    <img src="images/Iconslogo/star_gold.png" />
+                    <img src="images/Iconslogo/star_gray.png" />
+                  </div>
+                </div>
+                <div class="testi-content">
+                  <p>
+                    A highly responsible and organized D4 Software Engineering student, 
+                    proficient in administration (MS Office), with leadership experience as 
+                    Secretary of Pramuka Saka Bhayangkara at the city level.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="testimonial">
+                <div class="head-testi">
+                  <img src="images/bagus.JPG" alt="Bagus" />
+                  <div class="name-testi">Bagus</div>
+                  <div class="subname-testi">Student Council Trustee<br />SMA Triguna 1956 Jakarta</div>
+                  <div class="stars">
+                    <img src="images/Iconslogo/star_gold.png" />
+                    <img src="images/Iconslogo/star_gold.png" />
+                    <img src="images/Iconslogo/star_gold.png" />
+                    <img src="images/Iconslogo/star_gold.png" />
+                    <img src="images/Iconslogo/star_gray.png" />
+                  </div>
+                </div>
+                <div class="testi-content">
+                  <p>
+                    Khalil, as the Head of the OSIS Informatics Section and an SE student, 
+                    is a highly responsible and organized individual. Their proficiency
+                    in digital administration (MS Office) ensures all team information 
+                    needs are handled effectively and on time.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="testimonial">
+                <div class="head-testi">
+                  <img src="images/radit.jpg" alt="radit" />
+                  <div class="name-testi">Raditya Satya Galih</div>
+                  <div class="subname-testi">Partners in the OSIS field<br />IYS</div>
+                  <div class="stars">
+                    <img src="images/Iconslogo/star_gold.png" />
+                    <img src="images/Iconslogo/star_gold.png" />
+                    <img src="images/Iconslogo/star_gold.png" />
+                    <img src="images/Iconslogo/star_gold.png" />
+                    <img src="images/Iconslogo/star_gold.png" />
+                  </div>
+                </div>
+                <div class="testi-content">
+                  <p>
+                    From my observation, you are an individual with 
+                    a high sense of responsibility and a strong work 
+                    ethic. Beyond being highly accountable, you also
+                     possess integrity and are genuinely friendly with 
+                     everyone. You demonstrate excellent soft skills, 
+                     particularly in public speaking and offering assistance 
+                     within the organization. Furthermore, you have a 
+                     valuable hard skill, having served as a photographer 
+                     during your high school years.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="contact-area" id="contact">
+      <div class="text-part">
+        <h1>Contact Me</h1>
+        <div class="cont-form">
+          <form onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder="Name *" /><br />
+            <input type="text" id="email" placeholder="Email *" />
+            <input type="text" id="subject" placeholder="Subject *" /><br />
+            <input
+              type="text"
+              placeholder="Phone No (Optional)"
+              id="phone"
+            /><br />
+            <textarea id="message" placeholder="Message *"></textarea><br />
+            <button type="submit" id="btn-submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--This is for playing alert sound-->
+    <audio id="alert" src="sound/alerts.mp3" preload="auto"></audio>
+    <audio id="success" src="sound/success.mp3" preload="auto"></audio>
+
+    <div class="cta hide" id="goup">
+      <a href="#home"><img src="images/Iconslogo/arrup.png" /></a>
+    </div>
+
+    <!--Copyright Information-->
+    <div class="copyright">
+      <p>
+        &copy; 2025
+        <a href="https://polindra.ac.id.np">Khalil</a>
+      </p>
+    </div>
+    <script>
+      //handles goup button
+      myID = document.getElementById("goup");
+
+      var myScrollFunc = function () {
+        var y = window.scrollY;
+        if (y >= 800) {
+          myID.className = "cta show";
+        } else {
+          myID.className = "cta hide";
+        }
+      };
+      window.addEventListener("scroll", myScrollFunc);
+
+      //The below line dynamically change the name in banner area.
+      document.getElementById("iden-name").innerHTML = "Krishna Adhikari";
+
+      /*
+                The below code is used to slide/change image infinitely using for loop.
+                A single image will be available only for 2.5s and after that it automatically changes another image
+            */
+      var slideIndex = 0;
+      showSlides();
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("imgrel");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2500);
+      }
+
+      //The below is used to make navigation bar sticky
+      //when we scroll up the navigation bar will stick on top of page
+      window.onscroll = function () {
+        stickFunction();
+      };
+      var navbar = document.getElementById("myNav");
+      var sticky = navbar.offsetTop;
+
+      function stickFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+  </body>
+</html>
